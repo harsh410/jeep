@@ -1,5 +1,7 @@
 input.onGesture(Gesture.Shake, function () {
     basic.showString("Hello!")
+    music._playDefaultBackground(music.builtInPlayableMelody(Melodies.Dadadadum), music.PlaybackMode.InBackground)
+    music.play(music.tonePlayable(262, music.beat(BeatFraction.Whole)), music.PlaybackMode.UntilDone)
     basic.showNumber(1)
     basic.pause(100)
     basic.showNumber(2)
